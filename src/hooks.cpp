@@ -311,7 +311,7 @@ MAKE_AUTO_HOOK_MATCH(
     bool invalidated
 ) {
     if (Manager::Replaying())
-        invalidated = false;
+        invalidated = true;
 
     LevelCompletionResults_ctor(
         self,
