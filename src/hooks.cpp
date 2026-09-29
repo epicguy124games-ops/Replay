@@ -352,6 +352,7 @@ MAKE_AUTO_HOOK_MATCH(
     HMUI::ViewController* viewController,
     System::Action* finishedCallback,
     HMUI::ViewController::AnimationDirection animationDirection,
+    bool immediately
 ) {
     if (!Manager::CancelPresentation())
         FlowCoordinator_PresentViewController(self, viewController, finishedCallback, animationDirection, immediately);
