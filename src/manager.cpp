@@ -323,7 +323,7 @@ ON_EVENT(MetaCore::Events::MapEnded) {
     Camera::FinishReplay();
     started = false;
     paused = false;
-    cancelPresentation = !MetaCore::Internals::mapWasQuit;
+    cancelPresentation = false;
 }
 
 ON_EVENT(MetaCore::Events::GameplaySceneEnded) {
